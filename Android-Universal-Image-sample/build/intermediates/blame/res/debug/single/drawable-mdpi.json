@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_empty.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\src\\main\\res\\drawable-mdpi\\ic_empty.png"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_stub.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\src\\main\\res\\drawable-mdpi\\ic_stub.png"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_error.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\src\\main\\res\\drawable-mdpi\\ic_error.png"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-Universal-Image-sample\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    }
+]

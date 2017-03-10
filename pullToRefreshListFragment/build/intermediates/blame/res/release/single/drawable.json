@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\pullToRefreshListFragment\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\pullToRefreshListFragment\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    }
+]

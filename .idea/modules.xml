@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-PullToRefresh_library/Android-PullToRefresh_library.iml" filepath="$PROJECT_DIR$/Android-PullToRefresh_library/Android-PullToRefresh_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-PullToRefresh_sample/Android-PullToRefresh_sample.iml" filepath="$PROJECT_DIR$/Android-PullToRefresh_sample/Android-PullToRefresh_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Universal-Image-sample/Android-Universal-Image-sample.iml" filepath="$PROJECT_DIR$/Android-Universal-Image-sample/Android-Universal-Image-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baselibrary/Baselibrary.iml" filepath="$PROJECT_DIR$/Baselibrary/Baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BeijingNews.iml" filepath="$PROJECT_DIR$/BeijingNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPushExample(513799)/JPushExample(513799).iml" filepath="$PROJECT_DIR$/JPushExample(513799)/JPushExample(513799).iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPushExample(586200)/JPushExample(586200).iml" filepath="$PROJECT_DIR$/JPushExample(586200)/JPushExample(586200).iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoView-library/PhotoView-library.iml" filepath="$PROJECT_DIR$/PhotoView-library/PhotoView-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoView-sample/PhotoView-sample.iml" filepath="$PROJECT_DIR$/PhotoView-sample/PhotoView-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" filepath="$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Universal-Image-Loader-library/Universal-Image-Loader-library.iml" filepath="$PROJECT_DIR$/Universal-Image-Loader-library/Universal-Image-Loader-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator_library/ViewPagerIndicator_library.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator_library/ViewPagerIndicator_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator_sample/ViewPagerIndicator_sample.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator_sample/ViewPagerIndicator_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttputils/okhttputils.iml" filepath="$PROJECT_DIR$/okhttputils/okhttputils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-okhttp/sample-okhttp.iml" filepath="$PROJECT_DIR$/sample-okhttp/sample-okhttp.iml" />
+    </modules>
+  </component>
+</project>

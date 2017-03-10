@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\exploded-aar\\BeijingNews\\Android-PullToRefresh_library\\unspecified\\res\\anim\\slide_in_from_bottom.xml"
+    }
+]

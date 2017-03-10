@@ -1,0 +1,4 @@
+#Thu Mar 09 13:14:28 CST 2017
+base.0=D\:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\Androidstudio\\BeijingNews\\Android-PullToRefresh_sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

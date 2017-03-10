@@ -1,0 +1,8 @@
+include ':app', ':Baselibrary', ':PhotoView-sample', ':PhotoView-library', ':JPushExample(513799)', ':JPushExample(586200)', ':Android-Universal-Image-sample', ':Universal-Image-Loader-library', ':sample-okhttp', ':okhttputils'
+include ':SlidingMenu_library'
+include ':ViewPagerIndicator_library'
+include ':ViewPagerIndicator_sample'
+include ':Android-PullToRefresh_library'
+include ':pullToRefreshListFragment'
+include ':pullToRefreshViewPager'
+include ':Android-PullToRefresh_sample'
