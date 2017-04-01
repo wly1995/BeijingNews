@@ -1,15 +1,14 @@
-package com.atguigu.beijingnews.pager;
+package com.atguigu.beijingnews.newscenter.view;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Color;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.atguigu.baselibrary.CacheUtils;
 import com.atguigu.baselibrary.Constants;
 import com.atguigu.baselibrary.DensityUtil;
 import com.atguigu.beijingnews.activity.MainActivity;
@@ -21,11 +20,7 @@ import com.atguigu.beijingnews.detailpager.NewsMenuDetailPager;
 import com.atguigu.beijingnews.detailpager.PhotosMenuDetailPager;
 import com.atguigu.beijingnews.detailpager.TopicMenuDetailPager;
 import com.atguigu.beijingnews.fragment.LeftMenuFragment;
-import com.google.gson.Gson;
-
-import org.xutils.common.Callback;
-import org.xutils.http.RequestParams;
-import org.xutils.x;
+import com.atguigu.beijingnews.newscenter.presenter.NewsCenterPresenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,35 +29,30 @@ import java.util.List;
  * Created by 万里洋 on 2017/2/5.
  */
 
-public class NewsCenterPager extends BasePager {
+public class NewsCenterPager extends BasePager implements INewsCenterView{
     /**
      * 存放新闻中心里面四个pager界面的集合
      */
     private ArrayList<MenuDetailBasePager> menuDetailBasePagers;
     private Context mContext;
-
     /**
      * 左侧菜单对应的数据
      */
     private List<NewsCenterBean.DataBean> dataBeanList;
+    private NewsCenterPresenter presenter;
+    private ProgressDialog progressDialog ;
     public NewsCenterPager(Context context) {
         super(context);
         this.mContext = context;
-
+        presenter = new NewsCenterPresenter(NewsCenterPager.this);
+        progressDialog = new ProgressDialog(mContext);
     }
     @Override
     public void initData() {
         super.initData();
-
-        //设置标题
-//        tv_title.setText("新闻中心");
-
         Log.e("TAG","新闻中心加载数据了");
-
         //显示菜单按钮，因为只有新闻中心界面才有这按钮
         ib_menu.setVisibility(View.VISIBLE);
-
-
         //实例视图
         TextView textView = new TextView(mContext);
         textView.setTextSize(DensityUtil.dip2px(mContext,20));
@@ -72,52 +62,22 @@ public class NewsCenterPager extends BasePager {
 
         //和父类的FrameLayout结合
         fl_main.addView(textView);
-
         /**
          * 在初始化数据的时候从sp中获取缓存的数据
          */
-        String saveJson = CacheUtils.getString(mContext, Constants.NEWSCENTER_PAGER_URL);//""
-        if(!TextUtils.isEmpty(saveJson)){
-            processData(saveJson);
-        }
+//        String saveJson = CacheUtils.getString(mContext, Constants.NEWSCENTER_PAGER_URL);//""
+//        if(!TextUtils.isEmpty(saveJson)){
+//            processData(saveJson);
+//        }
+        //从本地获取数据
+        presenter.fromLocalData();
         
         //进行联网的请求
-        getDataFromNet();
+        presenter.getDataFromNet();
     }
-
-    private void getDataFromNet() {
-        RequestParams params = new RequestParams(Constants.NEWSCENTER_PAGER_URL);
-        x.http().get(params, new Callback.CommonCallback<String>() {
-            @Override
-            public void onSuccess(String result) {
-                //在网络请求成功的时候就缓存数据
-                CacheUtils.putString(mContext,Constants.NEWSCENTER_PAGER_URL,result);
-                Log.e("TAG", "请求成功=="+result);
-                //数据请求成功后开始解析数据
-                processData(result);
-            }
-
-
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-                Log.e("TAG", "请求失败==" + ex.getMessage());
-            }
-
-            @Override
-            public void onCancelled(CancelledException cex) {
-
-            }
-
-            @Override
-            public void onFinished() {
-                Log.e("TAG", "onFinished==");
-            }
-        });
-    }
-
-    private void processData(String json) {
-        Gson gson = new Gson();
-        NewsCenterBean newsCenterBean = gson.fromJson(json, NewsCenterBean.class);
+    private void processData(NewsCenterBean newsCenterBean) {
+//        Gson gson = new Gson();
+//        NewsCenterBean newsCenterBean = gson.fromJson(json, NewsCenterBean.class);
         dataBeanList = newsCenterBean.getData();
         Log.e("TAG", "新闻中心解析成功=" + dataBeanList.get(0).getChildren().get(0).getTitle());
 
@@ -151,7 +111,6 @@ public class NewsCenterPager extends BasePager {
         if (prePosition < menuDetailBasePagers.size()) {
             //设置标题
             tv_title.setText(dataBeanList.get(prePosition).getTitle());
-
             /**
              * 得到四个详情页面中的某一个实例
              */
@@ -163,7 +122,6 @@ public class NewsCenterPager extends BasePager {
             //放在之前的framelayout中，进行替换
             fl_main.removeAllViews();//移除之前的
             fl_main.addView(rootView);
-
 
             if(prePosition ==2){
                 //组图
@@ -180,7 +138,37 @@ public class NewsCenterPager extends BasePager {
                 ib_swtich_list_gird.setVisibility(View.GONE);
             }
         } else {
-            Toast.makeText(mContext, "该功能还未实现，敬请期待", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "该页面暂时未实现", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public void showLoading() {
+        progressDialog.show();
+    }
+
+    @Override
+    public void hideLoading() {
+        progressDialog.dismiss();
+    }
+
+    @Override
+    public void onSuccess(NewsCenterBean newsCenterBean) {
+        //解析从model层获取的数据
+        processData(newsCenterBean);
+    }
+
+    @Override
+    public void onFailed(Exception e) {
+        Toast.makeText(mContext, "请求失败"+e.getMessage(), Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 返回网络请求地址
+     * @return
+     */
+    @Override
+    public String getUrl() {
+        return Constants.NEWSCENTER_PAGER_URL;
     }
 }

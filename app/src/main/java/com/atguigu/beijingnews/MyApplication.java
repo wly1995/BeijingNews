@@ -22,9 +22,11 @@ import okhttp3.OkHttpClient;
  */
 
 public class MyApplication extends Application {
+    private static MyApplication instance;
     @Override
     public void onCreate() {
         super.onCreate();
+        instance = this;
         x.Ext.init(this);
         x.Ext.setDebug(BuildConfig.DEBUG); // 是否输出debug日志, 开启debug会影响性能.
 
@@ -63,5 +65,8 @@ public class MyApplication extends Application {
 
         // Initialize ImageLoader with configuration.
         ImageLoader.getInstance().init(config.build());
+    }
+    public static MyApplication getInstance(){
+        return instance;
     }
 }

@@ -13,7 +13,7 @@ import com.atguigu.beijingnews.R;
 import com.atguigu.beijingnews.activity.MainActivity;
 import com.atguigu.beijingnews.base.BaseFragment;
 import com.atguigu.beijingnews.bean.NewsCenterBean;
-import com.atguigu.beijingnews.pager.NewsCenterPager;
+import com.atguigu.beijingnews.newscenter.view.NewsCenterPager;
 
 import java.util.List;
 

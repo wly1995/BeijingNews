@@ -11,7 +11,7 @@ import com.atguigu.beijingnews.activity.MainActivity;
 import com.atguigu.beijingnews.base.BaseFragment;
 import com.atguigu.beijingnews.base.BasePager;
 import com.atguigu.beijingnews.pager.HomePager;
-import com.atguigu.beijingnews.pager.NewsCenterPager;
+import com.atguigu.beijingnews.newscenter.view.NewsCenterPager;
 import com.atguigu.beijingnews.pager.SettingPager;
 import com.atguigu.beijingnews.view.NoScrollViewPager;
 import com.slidingmenu.lib.SlidingMenu;
